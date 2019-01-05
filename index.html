@@ -13,7 +13,7 @@
 		}
 		body{
 			text-align: center;
-			background-color:#FBF0ED;
+			background-color:#f7f7f7;
 		}
 		#top{
 			background-color:white;
@@ -190,7 +190,7 @@
 		}
 		
 		#box{
-			height:1920px;
+			height:auto;
 			width:1180px;
 			margin: 0px auto;
 			border:#EA7129 solid 0px;
@@ -310,11 +310,14 @@
 			width: 20px;
 			height: 20px;
 			line-height: 20px;
+			border: 0px solid white;
+			border-radius:10px;
             background-color: #fff;
             margin: 5px;
 		}
 		#nums li:hover{
 			background-color: #EE552F;
+			color: white;
 		}
 		 #arr{
             display: none;
@@ -388,10 +391,124 @@
 			color: #EF9953;
 		}
 		#box33{
-			height: 185px;
-			width: 195px;
-			background-color:#92D355;
+			height: 155px;
+			width: 165px;
+			background-color:white;
+			padding: 15px;
+			text-align: left;
 		}
+		#box33 img{
+			margin-right: 15px;
+		}
+		#box331{
+			font-weight: bold;
+			font-size: 14px;
+			margin-right: 5px;
+		}
+		#box332{
+			color: #FC562D;
+		}
+		#box333{
+			width:130px;
+			margin: 5px 0px;
+		}
+		#box335{
+			margin: 0px 5px;
+			color:#F26D1D;
+		}
+		#box336{
+			width: 130px;
+			margin: 10px auto;
+			color: white;
+			border-radius:5px;
+			background-color: #F24911;
+			border: 1px solid #F24911;
+			
+		}
+		#box4{
+			height:205px;
+			width:1180px;
+			margin: 30px auto 0 auto;
+			background-color:#f7f7f7;
+			float: left;
+		}
+		#box41{
+			width: 150px;
+			margin: 0 85px 0 0;
+			height: 181px;
+			float: left;
+			background-color:#f7f7f7;
+		}
+		#box42{
+			width: 800px;
+			height: 181px;
+			float: left;
+			margin-top: 20px;
+			background-color:#f7f7f7;
+		}
+		.box421{
+			padding: 5px 0px;
+			width: 132px;
+			height: 171px;
+			float: left;
+			background-color:#f7f7f7;
+			
+		}
+		.box421 a span {
+			width: 132px;
+			height: 30px;
+			float: left;
+			font-size: 14px;
+			display: block;
+			text-align: left;
+		}
+		.box422{
+			font-weight: bold;
+			font-size: 15px;
+		}
+		#box43{
+			width: 145px;
+			height: 181px;
+			float: left;
+			margin-top: 20px;
+			
+			background-color:#f7f7f7;
+		}
+		#box5{
+			height:210px;
+			width:1180px;
+			margin: 0px auto;
+		}
+		#box51{
+			height:150px;
+			width:1180px;
+			margin: 0px auto;
+		}
+		#box51 span{
+			height: 30px;
+			width: 1180px;
+			float: left;
+			font-size: 13px;
+			
+			line-height: 50px;
+		}
+		#box51 span a{
+			font-size: 14px;
+			color: #424242;
+			font-weight: bold;
+		}
+		#box52{
+			height:60px;
+			width:1180px;
+			padding: 0px auto;
+			text-align: center;
+			line-height: 50px;
+		}
+		#box52 img{
+			margin: auto 5px;
+			
+		}
+		
 </style>
 </head>
 <body>
@@ -526,6 +643,7 @@
 		<!--box3-->
 		<div id="box3">
 			<div id="box31"><img src="img/ico-notice.png" alt=""><span><a href="">帮帮快讯</a></span><img src="img/jiantou.jpg" alt=""></div>
+			
 			<!--公告栏-->
 			<div id="box32">
 			<div id="list"></div>
@@ -555,7 +673,7 @@
 					}
 					n--;
 					box.style.marginTop = n+'px';
-					console.log(box.style.margin);
+					/*console.log(box.style.margin);*/
 				},10)
 
     			box.onmouseover=function () {
@@ -568,16 +686,74 @@
 					}
 					n--;
 					box.style.marginTop = n+'px';
-					console.log(box.style.margin);
+					/*console.log(box.style.margin);*/
 				},10)
     			}
 				</script>
-			
-		
-			<div id="box33"></div>
+
+			<div id="box33">
+			<img src="img/tp-my-phone.png" alt=""><span id="box331">话费充值</span><span id="box332">(可使用超级帮钻)</span>
+			<input type="text" id="box333" placeholder="请输入手机号">
+			<select id="box334">
+  				<option value ="30">30</option>
+  				<option value ="60">60</option>
+  				<option value="80">80</option>
+  				<option value="100">100</option>
+			</select><span id="box335"></span><br>
+				<input type="button" value="充值" id="box336">
+				<script>
+				var box334=document.getElementById("box334");
+					var box335=document.getElementById("box335");
+					console.log(box334.value);
+					setInterval(function(){
+						box335.innerHTML='￥'+box334.value;
+						console.log(box334.value);
+					},10)
+				</script>
+			</div>
 		</div>
 		<!--box4-->
-		<div id="box4"></div>
+		<div id="box4">
+			<div id="box41"><img src="img/loginB.jpg" alt=""></div>
+			<div id="box42">
+				<div class="box421">
+				<a href=""><span class="box422">购物指南</span></a>
+					<a href=""><span>如何下单</span></a>
+					<a href=""><span>帮5购流程</span></a>
+					<a href=""><span>订单查询</span></a>
+					<a href=""><span>物流配送</span></a></div>
+				<div class="box421">
+					<a href=""><span class="box422">支付相关</span></a>
+					<a href=""><span>支付方式</span></a>
+					<a href=""><span>安全设置</span></a>
+					<a href=""><span>账户信息</span></a></div>
+				<div class="box421">
+					<a href=""><span class="box422">售后服务</span></a>
+					<a href=""><span>取消订单</span></a>
+					<a href=""><span>申请售后</span></a>
+					<a href=""><span>退货流程</span></a>
+					<a href=""><span>退款相关</span></a></div>
+				<div class="box421">
+					<a href=""><span class="box422">VIP服务</span></a>
+					<a href=""><span>vip优惠</span></a>
+					<a href=""><span>如何成为vip</span></a>
+					<a href=""><span>超级帮钻</span></a></div>
+				<div class="box421">
+					<a href=""><span class="box422">帮韩品</span></a>
+					<a href=""><span>韩国正品</span></a>
+					<a href=""><span>闪电发货</span></a>
+					<a href=""><span>帮韩品收获</span></a></div>
+				<div class="box421">
+					<a href=""><span class="box422">更多</span></a>
+					<a href=""><span>手机APP</span></a>
+					<a href=""><span>帮5采APP</span></a>
+					<a href=""><span>帮5淘插件</span></a>
+					<a href=""><span>其他</span></a></div>
+			</div>
+			<div id="box43"><img src="img/erweima.jpg" alt=""></div>
+		</div>
+		<br>
+		<hr style="margin: 0px auto; color: #FF0004;width: 1180px" >
 	</div>
 	<script>
 	 function get(id){
@@ -675,5 +851,14 @@
         }, 5);
 	 }
 	</script>
+	<div id="box5">
+		<div id="box51">
+			<span><a href="">关于帮5买</a> | <a href="">联系我们</a> | <a href="">合作商家</a> | <a href="">友情链接</a> | <a href="">加入我们</a> | <a href="">移动应用</a> | <a href="">热门</a> | <a href="">广告联盟</a> | <a href="">使用条款</a></span>
+			<span>Copyright © 2011-2015 B5M.COM.All rights reserved.Prower by B5Msoft Co.Ltd </span>
+			<span>增值电信业务营业许可证：沪B2-20130065号|中华人民共和国互联网药品信息服务资格证书（沪）-非经营性-2013-0034沪卫（中医）网审【2015】10032号 沪ICP备11034776号-3 | 食品流通许可证：</span>
+			<span>SP3101151410301755</span>
+		</div>
+		<div id="box52"><img src="img/bo1.gif" alt=""><img src="img/bo2.png" alt=""><img src="img/bo3.gif" alt=""><img src="img/bo4.png" alt=""><img src="img/bo5.png" alt=""><img src="img/bo6.png" alt=""><img src="img/bo7.png" alt=""></div>
+	</div>
 </body>
 </html>
