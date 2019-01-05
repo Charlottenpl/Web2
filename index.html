@@ -1,0 +1,679 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0px;
+			padding: 0px;
+		}
+		a{
+			text-decoration: none;
+		}
+		body{
+			text-align: center;
+			background-color:#FBF0ED;
+		}
+		#top{
+			background-color:white;
+			padding-top: 10px;
+		}
+		#topbox{
+			height: 175px;
+			width:1180px;
+			margin: 0px auto;
+			background-color:white;	
+		}
+		#top1{
+			height: 25px;
+			widrh:1350px;
+			margin:auto auto;
+		}
+		#top11{
+			height: 25px;
+			width: 800px;
+			float: right;
+			text-align: left;
+			line-height: 25px;
+			margin-bottom: 30px;
+			
+		}
+		#top1img1{
+			margin-top: -30px;
+			position:absolute; 
+			clip:rect(30px 19px 52px 0px); 
+			/*display:inline-block;*/
+			/*float: right;*/
+		
+		}
+		#top1img2{
+			margin-top: -52px;
+			margin-left: 40px;
+			position:absolute; 
+			clip:rect(52px 19px 72px 0px); 
+			/*display:inline-block;*/
+			/*float: right;*/
+		}
+		#top1img3{
+			margin-top: -74px;
+			margin-left: 80px;
+			position:absolute; 
+			clip:rect(74px 19px 95px 0px); 
+			/*display:inline-block;*/
+			/*float: right;*/
+		}
+		#top1img4{
+			margin-top: -112px;
+			margin-left: 20px;
+			position:absolute; 
+			clip:rect(115px 19px 128px 0px); 
+			/*display:inline-block;*/
+			/*float: right;*/
+		}
+		#num{
+			font-size: 14px;
+			color:#FF3900;
+		}
+		#top2{
+			height: 100px;
+			
+			margin: 10px auto 0px auto;
+			border: white 1px solid;
+		}
+		#logo3{
+			float: left;
+			margin-right: 
+		}
+		#top21{
+			height: 35px;
+			width: 510px;
+			margin-left: 110px;
+			margin-right: 94px;
+			float: left;
+			display: inline-block;
+			border: 2px #FF5200 solid;
+		}
+		#top22{
+			height: 35px;
+			width: 70px;
+			float: right;
+			margin: 0px 0px;
+			border: 0px;
+			font-size: 16px;
+			color: white;
+			display: inline-block;
+			background-color: #FF5200;
+			
+		}
+		.top23{
+			height: 33px;
+			width: 100px;
+			margin: auto 0px;
+			padding: 0px;
+			float: left;
+			padding: 2px;
+			border: 1px  #555555 solid;
+		}
+		#top2img1{
+			margin-top: -96px;
+			position:absolute;
+			float: left;
+			clip:rect(96px 19px 111px 0px);
+			margin-left: -10px;
+		}
+		#top2img2{
+			margin-top: -112px;
+			position:absolute; 
+			clip:rect(115px 19px 128px 0px); 
+			float: left;
+			margin-left: -10px;
+		}
+		#top2img3{
+			float: left;
+			position:absolute; 
+			margin-top: -127px;
+			margin-left: -17px;
+			clip:rect(130px 19px 146px 0px);
+		}
+		#top24{
+			height: 32px;
+			width: 100px;
+			margin: auto 0px;
+			padding: 0px;
+			float: left;
+			padding: 5px 0px 0px 0px;
+			border: 1px  #555555 solid;
+			background-color: #FF5200;
+		}
+		#top25{
+			height: 30px;
+			width: 510px;
+			margin: 65px 413px 0px auto;
+			border: 1px white solid;
+		}
+		#top25>a,span{
+			font-size: 10px;
+			margin: 0px 1px;
+			color: #605F5F;
+			
+		}
+		#top3{
+			height: 40px;
+			width: 1050px;
+			border: 0px white solid;
+			
+		}
+
+		#top31{
+			height: 38px;
+			width: 185px;
+			line-height: 38px;
+			display: inline-block;
+			float: left;
+			background-color: #FF5200;
+			color: aliceblue;
+		}	
+		.top32{
+			height: 38px;
+			width: 116px;
+			display: inline-block;
+			line-height: 38px;
+			float: left;
+			color:  #FF5200;
+		}
+
+		.top32:hover{
+			background-color: #FF5200;
+			color: aliceblue;
+			
+		}
+		
+		#box{
+			height:1920px;
+			width:1180px;
+			margin: 0px auto;
+			border:#EA7129 solid 0px;
+		}
+		#box1{
+			height: 545px;
+			width: 185px;
+			float: left;
+			background-color: #AAE1AF;
+		}
+		#box11{
+			height: 400px;
+			width: 25px;
+			float: left;
+			background-color:#5C5C5C;
+			color:#FF8A34;
+			line-height: 25px;
+		}
+		#box12{
+			height: 400px;
+			width: 160px;
+			float: left;
+			background-color:#ADA6FF;
+		}
+		.box121{
+			height: 31px;
+			width: 160px;
+			float: left;
+			background-color:white;
+		}
+		.box121>a{
+			margin: 0px 5px 0px 5px;
+			font-size: 12px;
+			color: black;
+		}
+		#box13{
+			height: 145px;
+			width: 185px;
+			float: left;
+			border-top: 1px #D7684D solid;
+			background-color:white;
+		}
+		.box131{
+			height: 45px;
+			width: 185px;
+			font-size: 14px;
+			color:#413735;
+			margin-left: 35px;
+			text-align: left;
+			line-height: 42px;
+			background-color:white;
+		}
+		.box131>a{
+			color:#413735;
+		}
+		#box13img1{
+			margin-top: 12px;
+			position:absolute;
+			float: left;
+			clip:rect(0px 23px 24px 0px);
+			margin-left: -25px;
+		}
+		#box13img2{
+			margin-top: -48px;
+			position:absolute;
+			float: left;
+			margin-left: -25px;
+			clip:rect(57px 23px 84px 0px);
+			
+		}
+		#box13img3{
+			margin-top: -110px;
+			position:absolute;
+			float: left;
+			clip:rect(117px 23px 145px 0px);
+			margin-left: -25px;
+		}
+		#box2{
+			height: 545px;
+			width: 800px;
+			float: left;
+			background-color:#FFBFC0;
+		}
+		#box21{
+			height:361px;
+			width: 800px;
+			overflow: hidden;
+			vertical-align: top;
+			position: relative;
+			background-color: aquamarine;
+		}
+		#box21 ul{
+			width: 1000%;
+            position: absolute;
+            list-style: none;
+            left:0;
+            top: 0;
+		}
+		#box21 ul li{
+			float: left;
+		}
+		#box21 img{
+            width: 800px;
+            height: 361px;
+            vertical-align: top
+        }
+		#nums{
+			position: absolute;
+			height: 20px;
+			right: 350px;
+			bottom: 20px;
+			text-align: center;
+			padding: 5px;
+		}
+		#nums li{
+			display: inline-block;
+			width: 20px;
+			height: 20px;
+			line-height: 20px;
+            background-color: #fff;
+            margin: 5px;
+		}
+		#nums li:hover{
+			background-color: #EE552F;
+		}
+		 #arr{
+            display: none;
+        }
+		#arr span{
+			width: 40px;
+            height: 40px;
+            position: absolute;
+            left: 5px;
+            top: 50%;
+            margin-top: -20px;
+            background: #fff;
+            cursor: pointer;
+            line-height: 40px;
+            text-align: center;
+            font-weight: bold;
+            font-family: '黑体';
+            font-size: 30px;
+            color: #000;
+            border: 1px solid #fff;
+		}
+		
+		#arr #right {
+            right: 5px;
+            left: auto;
+        }
+		.box221{
+			width: 200px;
+			height: 183px;
+			float: left;
+		}
+		#box3{
+			height: 545px;
+			width: 195px;
+			float: left;
+			background-color:#F2C7FF;
+		}
+		#box31{
+			height: 40px;
+			width: 195px;
+			background-color:white ;
+			text-align: center;
+			line-height: 40px;
+		}
+		#box31 span a{
+			margin: 0px 55px 0px 25px;
+			font-size: 16px;
+			color: #E8613F;
+		}
+		#box32{
+			height: 320px;
+			width: 195px;
+			overflow: hidden;
+			background-color:antiquewhite;
+		}
+		#list{
+			height: 832px;
+			width: 195px;
+			float: left;
+			position: relative;
+			margin-top: -416px;
+		}
+		.box321{
+			height: 32px;
+			width: 195px;
+			text-align: center;
+			float: left;
+		}
+		.box321 span{
+			font-size: 13px;
+			color: #EF9953;
+		}
+		#box33{
+			height: 185px;
+			width: 195px;
+			background-color:#92D355;
+		}
+</style>
+</head>
+<body>
+	<div id="top">
+<div id="topbox">
+		<!--顶部导航栏-->
+		<div id="top1">
+		  <span style="color: #9a9791;font-size: 14px;float: left">帮5买，想买买</span>
+				
+			<div id="top11">
+					<img src="img/common_min.png" alt="QQ" id="top1img1">
+					<img src="img/common_min.png" alt="微信" id="top1img2">
+					<img src="img/common_min.png" alt="微博" id="top1img3">
+					<a style="margin-left: 120px;margin-right: 10px;font-size: 12px" href="https://www.baidu.com" target="_black">登录</a>
+					<a href="https://www.bilibili.com" target="_black" style="font-size: 12px">注册</a>
+					<img src="img/common_min.png" alt="邮件" id="top1img4">
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 50px;margin-right: 10px;font-size: 12px">消息</a>
+					<img src="img/dingdan.jpg" alt="订单" style="padding-top: 5px">
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 10px;font-size: 12px">我的订单</a>
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 10px;font-size: 12px">我的收藏</a>
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 10px;font-size: 12px">帮钻兑换</a>
+					<img src="img/phone.png" alt="手机" style="">
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 10px;font-size: 12px">手机版</a>
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 10px;font-size: 12px">帮5淘</a>
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 10px;font-size: 12px">客户服务</a>
+					<img src="img/gouwuche.jpg" alt="手机" style="">
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 10px;font-size: 12px">购物车</a>
+					<span id="num">0</span>
+			</div>
+				
+		</div>
+		<!--搜索栏-->
+		<div id="top2">
+			<a href="https://www.bilibili.com" id="logo3"><img src="img/logo_03.jpg" alt="logo"></a>
+			<div id="top21">
+				<input type="button" value="搜全网" id="top22">
+			</div>
+			<div class="top23"><img src="img/common_min.png" id="top2img1" alt=""><span style="float: left;margin:20px 9px; font-size: 12px;color: #302F2F">400-085-0505</span></div>
+			<div class="top23"><img src="img/common_min.png" id="top2img2" alt=""><span style="float: left;margin:20px 9px; font-size: 12px;color: #302F2F">400-085-0505</span></div>
+			<div id="top24"><img src="img/common_min.png" id="top2img3" alt=""><span style="font-size: 14px;color: white; margin: 0px 0px 0px 10px">常见问题</span></div>
+			<div id="top25">
+			<a href="" style="color: red;">洗发护发</a>
+			<span href="">|</span>
+			<a href="" style="color: red;">日本纸尿裤</a>
+			<span href="">|</span>
+			<a href="">身体乳</a>
+			<span href="">|</span>
+			<a href="">内衣文胸</a>
+			<span href="">|</span>
+			<a href="" style="color: #80C4D0;">iPhone6s</a>
+			<span href="">|</span>
+			<a href="" style="color: #80C4D0;">iPod Air2</a>
+			<span href="">|</span>
+			<a href="">牛仔裤</a>
+			<span href="">|</span>
+			<a href="">奶粉</a>
+			<span href="">|</span>
+			<a href="">防晒霜</a>
+			<span href="">|</span>
+			<a href="">伞</a>
+			</div>
+		</div>
+		<div id="top3">
+		<a href="" id="top31">全网商品分类</a>
+		<a href="" class="top32">帮5赚</a>
+		<a href="" class="top32">帮韩品</a>
+		<a href="" class="top32">超划算</a>
+		<a href="" class="top32">品牌货栈</a>
+		<a href="" class="top32">韩国馆</a>
+		<a href="" class="top32">帮社区</a>
+		<a href="" class="top32">1元兑奖</a>
+	</div>
+	</div></div><hr color="#D67158" size="1px" align="center">
+	<!--box-->
+	<div id="box">
+	<div id="box1">
+		<div id="box11"><br><br>当<br>前<br>搜<br>索<br>电<br>商<br><br><br>全<br>网</div>
+		<div id="box12">
+			<div class="box121"><a href="">手机</a><a href="">数码</a><a href="">影音</a><a href="">配件</a></div>
+			<div class="box121"><a href="">电脑</a><a href="">网络</a><a href="">办公</a><a href="">打印</a></div>
+			<div class="box121"><a href="">家电</a><a href="">厨卫</a><a href="">生活</a><a href="">个护</a></div>
+			<div class="box121"><a href="">园艺</a><a href="">家具</a><a href="">家纺</a><a href="">家饰</a></div>
+			<div class="box121"><a href="">彩妆</a><a href="">面部</a><a href="">身体</a><a href="">香水</a></div>
+			<div class="box121"><a href="">男装</a><a href="">女装</a><a href="">内衣</a><a href="">其他</a></div>
+			<div class="box121"><a href="">女包</a><a href="">男包</a><a href="">女鞋</a><a href="">男鞋</a></div>
+			<div class="box121"><a href="">运动</a><a href="">户外</a><a href="">装备</a><a href="">服饰</a></div>
+			<div class="box121"><a href="">儿童</a><a href="">婴儿</a><a href="">饰品</a><a href="">玩具</a></div>
+			<div class="box121"><a href="">乐器</a><a href="">家宠</a><a href="">收藏</a><a href="">鲜花</a></div>
+			<div class="box121"><a href="">保健</a><a href="">医疗</a><a href="">药品</a><a href="">眼睛</a></div>
+			<div class="box121"><a href="">果蔬</a><a href="">礼品</a><a href="">粮油</a><a href="">特产</a></div>
+			<div class="box121"><a href="">文艺</a><a href="">生活</a><a href="">科技</a><a href="">教育</a></div>
+		</div>
+		<div id="box13">
+		<div class="box131"><img src="img/sort-icon-qa.png" id="box13img1" alt=""><a href="https://www.bilibili.com">什么是帮5购</a></div>
+		<div class="box131"><img src="img/sort-icon-qa.png" id="box13img2" alt=""><a href="https://www.bilibili.com">帮5购提供什么服务</a></div>
+		<div class="box131"><img src="img/sort-icon-qa.png" id="box13img3" alt=""><a href="https://www.bilibili.com">如何开通帮5购</a></div>
+		</div>
+		</div>
+		<!--box2-->
+		<div id="box2">
+			<!--轮播图-->
+		<div id="box21">
+		<ul id="ul1">
+            <li><a href="#"><img src="img/bann1.jpeg" alt=""></a></li>
+            <li><a href="#"><img src="img/bann2.jpeg" alt=""></a></li>
+            <li><a href="#"><img src="img/bann3.jpeg" alt=""></a></li>
+            <li><a href="#"><img src="img/bann4.jpeg" alt=""></a></li>
+            <li><a href="#"><img src="img/bann5.jpeg" alt=""></a></li>
+			<li><a href="#"><img src="img/bann6.png" alt=""></a></li>
+			<li><a href="#"><img src="img/bann1.jpeg" alt=""></a></li>
+        </ul>
+			
+			<!--下标-->
+			<ol id="nums">
+			</ol>
+			
+			<!--左右焦点-->
+        <div id="arr">
+              <span id="left">&lt;</span>
+              <span id="right">&gt;</span>
+        </div>
+			
+			</div>
+			
+		<div id="box22">
+			<div class="box221"><a href=""><img src="img/1(1).jpg" alt=""></a></div>
+			<div class="box221"><a href=""><img src="img/2.jpg" alt=""></a></div>
+			<div class="box221"><a href=""><img src="img/3(1).png" alt=""></a></div>
+			<div class="box221"><a href=""><img src="img/qqq.png" alt=""></a></div>
+			</div>
+		</div>
+		<!--box3-->
+		<div id="box3">
+			<div id="box31"><img src="img/ico-notice.png" alt=""><span><a href="">帮帮快讯</a></span><img src="img/jiantou.jpg" alt=""></div>
+			<!--公告栏-->
+			<div id="box32">
+			<div id="list"></div>
+			</div>
+			<script>
+				var box=document.getElementById("list");
+				var n=box.getBoundingClientRect().top;
+				for(var i = 0;i<13;i++){
+					var l=document.createElement("div");
+					var spans=document.createElement("span");
+					spans.innerHTML="[公告]  帮购及VIP服务调整"+(i+1);
+					l.className="box321";
+					l.appendChild(spans);
+					box.appendChild(l);
+				}
+				for(var i = 0;i<13;i++){
+					var l=document.createElement("div");
+					var spans=document.createElement("span");
+					spans.innerHTML="[公告]  帮购及VIP服务调整"+(i+1);
+					l.className="box321";
+					l.appendChild(spans);
+					box.appendChild(l);
+				}
+				var timer=setInterval(function(){
+					if(n<=-416){
+						n=0;
+					}
+					n--;
+					box.style.marginTop = n+'px';
+					console.log(box.style.margin);
+				},10)
+
+    			box.onmouseover=function () {
+        			clearInterval(timer);
+    			};
+    			box.onmouseout=function () {
+        			timer=setInterval(function(){
+					if(n<=-416){
+						n=0;
+					}
+					n--;
+					box.style.marginTop = n+'px';
+					console.log(box.style.margin);
+				},10)
+    			}
+				</script>
+			
+		
+			<div id="box33"></div>
+		</div>
+		<!--box4-->
+		<div id="box4"></div>
+	</div>
+	<script>
+	 function get(id){
+		 return document.getElementById(id);
+	 }
+	 
+	 //获取各元素
+	 var box2=get("box2");
+	 var box21=get("box21");
+	 var ul1=get("ul1");
+	 var lis=ul1.children;
+	 var nums=get("nums");
+	 var arr=get("arr");
+	 var right=get("right");
+	 var pic=0;
+	 
+	  for(var i=0;i<6;i++){
+        var list=document.createElement("li");
+ 
+        nums.appendChild(list);
+        list.innerText=(i+1);
+        list.setAttribute("index",i);
+        list.onclick=function () {
+           
+        pic=this.getAttribute("index");
+        animate(ul1,-pic*800);
+        }
+ 
+    }
+	 
+	 var timeId=setInterval(movepic,4000);
+	 box21.onmouseover=function () {
+        arr.style.display="block";
+        clearInterval(timeId);
+    };
+	 box21.onmouseout=function () {
+        arr.style.display="none";
+        timeId=setInterval(movepic,4000);
+    };
+	 right.onclick=movepic;
+	 
+	 function movepic(){
+		 if(pic==6){
+			 pic=0;
+			 ul1.style.left=0+"px";
+		 }
+		 
+		 pic++;
+		 animate(ul1,-pic*800);
+		 if(pic==6){
+			 for(var i=0;i<6;i++){
+				 nums.children[i].backgroundColor="#EE552F";
+			 }
+			 nums.children[0].backgroundColor="#EE552F";
+		 }else{
+			 for(var i=0;i<6;i++){
+				 nums.children[i].backgroundColor="#EE552F";
+			 }
+			 nums.children[pic].backgroundColor="#EE552F";
+		 }
+	 }
+	 
+	 left.onclick=function(){
+		 if (pic==0){
+            pic=5;
+            ul1.style.left=-pic*800+"px";
+        }
+        pic--;
+        animate(ul1,-pic*800);
+	 	for(var i=0;i<6;i++){
+				 nums.children[i].backgroundColor="#EE552F";
+		}
+		nums.children[pic].backgroundColor="#EE552F";
+	 }
+	 
+	 function animate(element, target){
+		 clearInterval(element.timeId);
+        
+        element.timeId = setInterval(function () {
+            
+            var current = element.offsetLeft;
+            
+            var step = 10;
+            step = current < target ? step : -step;
+            
+            current += step;
+            if (Math.abs(current - target) > Math.abs(step)) {
+                element.style.left = current + "px";
+            } else {
+               
+                clearInterval(element.timeId);
+              
+                element.style.left = target + "px";
+            }
+        }, 5);
+	 }
+	</script>
+</body>
+</html>
