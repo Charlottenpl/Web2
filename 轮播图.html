@@ -4,24 +4,44 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<style>
-		#d1{
-			height:100px;
-			width: 300px;
-			margin: 0 auto;
-			position: relative;
-			background-color: antiquewhite;
-		}
-		#d2{
-			width: 20px;
-			height: 30px;
-			background-color: aquamarine;
-			position: absolute;
-			text-align: right;
-		}
+		.tann{
+    width: 400px;
+    height: 270px;
+    opacity:1;
+    position: absolute;
+    left: 500px;
+    top: 500px;
+    z-index: 3000;
+    background-color: #fff;
+}
+		.tan{
+    width: 100%;
+    height: 1400px;
+    background-color:rgba(0,0,0,0.2);
+    position: absolute;
+    left: 0;
+    top: 0;    
+    z-index: 6000;
+    display: none;
+}
+		.tan2{
+    text-align: center;
+}
 	</style>
 </head>
 <body>
-	<div id="d1"><div id="d2"></div></div>
-	
+	 <div class="tan" id="tan">
+ 	<div class="tann">
+ 			<div>
+ 				<img src="任务所需小图/img/rr11_02.jpg" >
+ 			</div>
+ 			<div class="tan2">
+ 				<button class="button3" id="tag1">继续购物</button>
+    				<button class="button3" id="tag2">去购物车结算</button>
+
+    		</div>
+    </div>
+ </div>
+
 </body>
 </html>
