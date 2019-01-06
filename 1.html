@@ -1,0 +1,581 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0px;
+			padding: 0px;
+		}
+		a{
+			text-decoration: none;
+		}
+		body{
+			text-align: center;
+			background-color:#f7f7f7;
+		}
+		#top{
+			background-color:white;
+			padding-top: 10px;
+		}
+		#topbox{
+			height: 135px;
+			width:1180px;
+			margin: 0px auto;
+			background-color:white;	
+		}
+		#top1{
+			height: 25px;
+			margin:auto auto;
+		}
+		#top11{
+			height: 25px;
+			width: 800px;
+			float: right;
+			text-align: left;
+			line-height: 25px;
+			margin-bottom: 30px;
+			
+		}
+		#top1img1{
+			margin-top: -30px;
+			position:absolute; 
+			clip:rect(30px 19px 52px 0px); 
+			/*display:inline-block;*/
+			/*float: right;*/
+		
+		}
+		#top1img2{
+			margin-top: -52px;
+			margin-left: 40px;
+			position:absolute; 
+			clip:rect(52px 19px 72px 0px); 
+			/*display:inline-block;*/
+			/*float: right;*/
+		}
+		#top1img3{
+			margin-top: -74px;
+			margin-left: 80px;
+			position:absolute; 
+			clip:rect(74px 19px 95px 0px); 
+			/*display:inline-block;*/
+			/*float: right;*/
+		}
+		#top1img4{
+			margin-top: -112px;
+			margin-left: 20px;
+			position:absolute; 
+			clip:rect(115px 19px 128px 0px); 
+			/*display:inline-block;*/
+			/*float: right;*/
+		}
+		#num{
+			font-size: 14px;
+			color:#FF3900;
+		}
+		#top2{
+			height: 100px;
+			
+			margin: 10px auto 0px auto;
+			border: white 1px solid;
+		}
+		#logo3{
+			float: left;
+			margin-right: 
+		}
+		#top21{
+			height: 35px;
+			width: 510px;
+			margin-left: 110px;
+			margin-right: 94px;
+			float: left;
+			display: inline-block;
+			border: 2px #FF5200 solid;
+		}
+		#top22{
+			height: 35px;
+			width: 70px;
+			float: right;
+			margin: 0px 0px;
+			border: 0px;
+			font-size: 16px;
+			color: white;
+			display: inline-block;
+			background-color: #FF5200;
+			
+		}
+		.top23{
+			height: 33px;
+			width: 100px;
+			margin: auto 0px;
+			padding: 0px;
+			float: left;
+			padding: 2px;
+			border: 1px  #555555 solid;
+		}
+		#top2img1{
+			margin-top: -96px;
+			position:absolute;
+			float: left;
+			clip:rect(96px 19px 111px 0px);
+			margin-left: -10px;
+		}
+		#top2img2{
+			margin-top: -112px;
+			position:absolute; 
+			clip:rect(115px 19px 128px 0px); 
+			float: left;
+			margin-left: -10px;
+		}
+		#top2img3{
+			float: left;
+			position:absolute; 
+			margin-top: -127px;
+			margin-left: -17px;
+			clip:rect(130px 19px 146px 0px);
+		}
+		#top24{
+			height: 32px;
+			width: 100px;
+			margin: auto 0px;
+			padding: 0px;
+			float: left;
+			padding: 5px 0px 0px 0px;
+			border: 1px  #555555 solid;
+			background-color: #FF5200;
+		}
+		#top25{
+			height: 30px;
+			width: 510px;
+			margin: 65px 413px 0px auto;
+			border: 1px white solid;
+		}
+		#top25>a,span{
+			font-size: 10px;
+			margin: 0px 1px;
+			color: #605F5F;
+			
+		}
+		#top3{
+			height: 40px;
+			width: 100%;
+			margin: 0px auto;
+			background-color: #333333;
+			
+		}
+		#top30{
+			margin: 0 auto;
+			width: 1180px;
+		}
+		#top3 img{
+			display: inline-block;
+		}
+
+		#top31{
+			margin: 0;
+			height: 40px;
+			width: 85px;
+			line-height: 38px;
+			display: inline-block;
+			background-color:#FC015A;
+			color: aliceblue;
+			float:left;
+		}	
+		.top32{
+			margin: 0;
+			height: 38px;
+			width: auto;
+			padding: 0px 35px;
+			display: inline-block;
+			line-height: 38px;
+			color:#FFFFFF;
+			float: left;
+			background-color: #333333;
+		}
+
+		.top32:hover{
+			color: aliceblue;
+			
+		}
+		
+		#box4{
+			height:205px;
+			width:1180px;
+			margin: 30px auto 0 auto;
+			background-color:#f7f7f7;
+			float: left;
+		}
+		#box41{
+			width: 150px;
+			margin: 0 85px 0 0;
+			height: 181px;
+			float: left;
+			background-color:#f7f7f7;
+		}
+		#box42{
+			width: 800px;
+			height: 181px;
+			float: left;
+			margin-top: 20px;
+			background-color:#f7f7f7;
+		}
+		.box421{
+			padding: 5px 0px;
+			width: 132px;
+			height: 171px;
+			float: left;
+			background-color:#f7f7f7;
+			
+		}
+		.box421 a span {
+			width: 132px;
+			height: 30px;
+			float: left;
+			font-size: 14px;
+			display: block;
+			text-align: left;
+		}
+		.box422{
+			font-weight: bold;
+			font-size: 15px;
+		}
+		#box43{
+			width: 145px;
+			height: 181px;
+			float: left;
+			margin-top: 20px;
+			
+			background-color:#f7f7f7;
+		}
+		#box5{
+			height:210px;
+			width:1180px;
+			margin: 0px auto;
+		}
+		#box51{
+			height:150px;
+			width:1180px;
+			margin: 0px auto;
+		}
+		#box51 span{
+			height: 30px;
+			width: 1180px;
+			float: left;
+			font-size: 13px;
+			
+			line-height: 50px;
+		}
+		#box51 span a{
+			font-size: 14px;
+			color: #424242;
+			font-weight: bold;
+		}
+		#box52{
+			height:60px;
+			width:1180px;
+			padding: 0px auto;
+			text-align: center;
+			line-height: 50px;
+		}
+		#box52 img{
+			margin: auto 5px;
+			
+		}
+		
+		#box{
+			height: 744px;
+			width: 1180px;
+			margin: 0 auto;
+			background-color: #f7f7f7;
+		}
+		#box1{
+			height: 20px;
+			width: 1180px;
+			text-align: left;
+			padding: 15px 25px;
+		}
+		#box1 a{
+			color: #333;
+			font-size: 14px;
+			
+		}
+		#box2{
+			width: 1180px;
+			height: 620px;
+			float: left;
+			
+		}
+		#box21{
+			width: 1000px;
+			height: 620px;
+			float: left;
+			background-color: white;
+		}#box211{
+			height:410px;
+			width: 410px;
+			float: left;
+			position: relative;
+			background-color: antiquewhite;
+		}
+		#box212{
+			width: 410px;
+			height: 410px;
+			display: none;
+			background-color: #FEB5FF;
+			position: absolute;
+			margin: 0px auto 0px 410px;
+		}
+		#box213{
+			height:410px;
+			width: 590px;
+			float: left;
+			background-color: #92FFAE;
+		}
+		#box214{
+			float: left;
+			margin: 50px 1px 0 30px;
+			border: 0px #FC9E5A solid;
+		}
+		#box215{
+			float: left;
+			margin: 50px 30px 1px 0px;
+			border: 0px #FC9E5A solid;
+		}
+		#lt{
+			margin: 50px 0px 0px 30px;
+			float: left;
+		}
+		#gt{
+			margin: 50px 0px 0px 30px;
+			float: left;
+		}
+		#box22{
+			height:620px;
+			width: 180px;
+			float: left;
+			background-color:#f7f7f7;
+		}
+		#box3{
+			height:104px;
+			width: 1180px;
+			float: left;
+			background-color:#f7f7f7;
+		}
+	</style>
+</head>
+<body>
+	<div id="top">
+	<div id="topbox">
+		<!--顶部导航栏-->
+		<div id="top1">
+		  <span style="color: #9a9791;font-size: 14px;float: left">帮5买，想买买</span>
+				
+			<div id="top11">
+					<img src="img/common_min.png" alt="QQ" id="top1img1">
+					<img src="img/common_min.png" alt="微信" id="top1img2">
+					<img src="img/common_min.png" alt="微博" id="top1img3">
+					<a style="margin-left: 120px;margin-right: 10px;font-size: 12px" href="https://www.baidu.com" target="_black">登录</a>
+					<a href="https://www.bilibili.com" target="_black" style="font-size: 12px">注册</a>
+					<img src="img/common_min.png" alt="邮件" id="top1img4">
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 50px;margin-right: 10px;font-size: 12px">消息</a>
+					<img src="img/dingdan.jpg" alt="订单" style="padding-top: 5px">
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 10px;font-size: 12px">我的订单</a>
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 10px;font-size: 12px">我的收藏</a>
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 10px;font-size: 12px">帮钻兑换</a>
+					<img src="img/phone.png" alt="手机" style="">
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 10px;font-size: 12px">手机版</a>
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 10px;font-size: 12px">帮5淘</a>
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 10px;font-size: 12px">客户服务</a>
+					<img src="img/gouwuche.jpg" alt="手机" style="">
+					<a href="https://www.bilibili.com" target="_black" style="margin-left: 10px;font-size: 12px">购物车</a>
+					<span id="num">0</span>
+			</div>
+				
+		</div>
+		<!--搜索栏-->
+		<div id="top2">
+			<a href="https://www.bilibili.com" id="logo3"><img src="img/logo_03.jpg" alt="logo"></a>
+			<div id="top21">
+				<input type="button" value="搜全网" id="top22">
+			</div>
+			<div class="top23"><img src="img/common_min.png" id="top2img1" alt=""><span style="float: left;margin:20px 9px; font-size: 12px;color: #302F2F">400-085-0505</span></div>
+			<div class="top23"><img src="img/common_min.png" id="top2img2" alt=""><span style="float: left;margin:20px 9px; font-size: 12px;color: #302F2F">400-085-0505</span></div>
+			<div id="top24"><img src="img/common_min.png" id="top2img3" alt=""><span style="font-size: 14px;color: white; margin: 0px 0px 0px 10px">常见问题</span></div>
+			<div id="top25">
+			<a href="" style="color: red;">洗发护发</a>
+			<span href="">|</span>
+			<a href="" style="color: red;">日本纸尿裤</a>
+			<span href="">|</span>
+			<a href="">身体乳</a>
+			<span href="">|</span>
+			<a href="">内衣文胸</a>
+			<span href="">|</span>
+			<a href="" style="color: #80C4D0;">iPhone6s</a>
+			<span href="">|</span>
+			<a href="" style="color: #80C4D0;">iPod Air2</a>
+			<span href="">|</span>
+			<a href="">牛仔裤</a>
+			<span href="">|</span>
+			<a href="">奶粉</a>
+			<span href="">|</span>
+			<a href="">防晒霜</a>
+			<span href="">|</span>
+			<a href="">伞</a>
+			</div>
+		</div>
+		
+	</div>
+	
+	</div>
+	<div id="top3">
+		<div id="top30"><a href="index.html" id="top31">首页</a>
+		<a href="" class="top32">帮5赚</a>
+		<a href="" class="top32">帮韩品</a>
+		<a href="" class="top32">超划算</a>
+		<a href="" class="top32">品牌货栈</a>
+		<a href="" class="top32">韩国馆</a>
+		<a href="" class="top32">帮社区</a>
+		<a href="" class="top32">1元兑奖</a>
+		<img src="img/ff_03.jpg" alt=""></div>
+		
+	</div>
+	<div id="box">
+		<div id="box1"><a href="">首页</a><a href="">&gt;美容美肤/美体/精油&gt;</a><a href="">防晒&gt;韩国 RE:CIPE 水晶清爽防水防晒喷雾SPF50 150ml/瓶</a></div>
+		<div id="box2">
+			<div id="box21">
+				<div id="box211"><img src="img/pp0.jpeg"  id="bigimg1" alt=""></div>
+				<div id="box212"><img src="img/pp0.jpeg" id="bigimg2" alt=""></div>
+				<div id="box213">文字</div>
+				<div id="lt"><img src="img/spanl.jpg" alt=""></div>
+				<div id="box214"><img src="img/sp0.jpeg" id="smalimg1" alt=""></div>
+				<div id="box215"><img src="img/sp1.jpeg" id="smalimg2" alt=""></div>
+				<div id="gt"><img src="img/spanr.jpg" alt=""></div>
+				<script>
+					var lt=document.getElementById("lt");
+					var gt=document.getElementById("gt");
+					var big1=document.getElementById("bigimg1");
+					var box=document.getElementById("box212");
+					var box1=document.getElementById("box214");
+					var box2=document.getElementById("box215");
+					var big2=document.getElementById("bigimg2");
+					var little1=document.getElementById("smalimg1");
+					var little2=document.getElementById("smalimg2");
+					var pic="img/pp0.jpeg";
+					
+					big1.onmouseover=function(){
+						box.style.display='block';
+						console.log(big2.src)
+						
+					}
+					big1.onmouseout=function(){
+						box.style.display='none';
+						
+						
+					}
+					little1.onclick=function(){
+						
+						pic="img/pp0.jpeg";
+						big1.src=pic;
+						big2.src=pic;
+						box1.style.border='1px #FC9E5A solid';
+						box2.style.border='0px #FC9E5A solid';
+					}
+					little2.onclick=function(){
+						pic="img/pp1.jpeg";
+						big1.src=pic;
+						big2.src=pic;
+						box1.style.border='0px #FC9E5A solid';
+						box2.style.border='1px #FC9E5A solid';
+					}
+					lt.onclick=function(){
+						if(pic=="img/pp0.jpeg"){
+							pic="img/pp1.jpeg";
+							big1.src=pic;
+							big2.src=pic;
+							box1.style.border='0px #FC9E5A solid';
+							box2.style.border='1px #FC9E5A solid';
+						}else{
+							pic="img/pp0.jpeg";
+							big1.src=pic;
+							big2.src=pic;
+							box1.style.border='1px #FC9E5A solid';
+							box2.style.border='0px #FC9E5A solid';
+						}
+					}
+					gt.onclick=function(){
+						if(pic=="img/pp0.jpeg"){
+							pic="img/pp1.jpeg";
+							big1.src=pic;
+							big2.src=pic;
+							box1.style.border='0px #FC9E5A solid';
+							box2.style.border='1px #FC9E5A solid';
+						}else{
+							pic="img/pp0.jpeg";
+							big1.src=pic;
+							big2.src=pic;
+							box1.style.border='1px #FC9E5A solid';
+							box2.style.border='0px #FC9E5A solid';
+						}
+					}
+					
+				</script>
+			</div>
+			<div id="box22"><img src="img/ww_07.jpg" alt="">
+			</div>
+		</div>
+		<div id="box3"><img src="img/a_07.jpg" alt=""></div>
+		<div id="box4">
+			<div id="box41"><img src="img/loginB.jpg" alt=""></div>
+			<div id="box42">
+				<div class="box421">
+				<a href=""><span class="box422">购物指南</span></a>
+					<a href=""><span>如何下单</span></a>
+					<a href=""><span>帮5购流程</span></a>
+					<a href=""><span>订单查询</span></a>
+					<a href=""><span>物流配送</span></a></div>
+				<div class="box421">
+					<a href=""><span class="box422">支付相关</span></a>
+					<a href=""><span>支付方式</span></a>
+					<a href=""><span>安全设置</span></a>
+					<a href=""><span>账户信息</span></a></div>
+				<div class="box421">
+					<a href=""><span class="box422">售后服务</span></a>
+					<a href=""><span>取消订单</span></a>
+					<a href=""><span>申请售后</span></a>
+					<a href=""><span>退货流程</span></a>
+					<a href=""><span>退款相关</span></a></div>
+				<div class="box421">
+					<a href=""><span class="box422">VIP服务</span></a>
+					<a href=""><span>vip优惠</span></a>
+					<a href=""><span>如何成为vip</span></a>
+					<a href=""><span>超级帮钻</span></a></div>
+				<div class="box421">
+					<a href=""><span class="box422">帮韩品</span></a>
+					<a href=""><span>韩国正品</span></a>
+					<a href=""><span>闪电发货</span></a>
+					<a href=""><span>帮韩品收获</span></a></div>
+				<div class="box421">
+					<a href=""><span class="box422">更多</span></a>
+					<a href=""><span>手机APP</span></a>
+					<a href=""><span>帮5采APP</span></a>
+					<a href=""><span>帮5淘插件</span></a>
+					<a href=""><span>其他</span></a></div>
+			</div>
+			<div id="box43"><img src="img/erweima.jpg" alt=""></div>
+			<div id="box5">
+				<div id="box51">
+					<span><a href="">关于帮5买</a> | <a href="">联系我们</a> | <a href="">合作商家</a> | <a href="">友情链接</a> | <a href="">加入我们</a> | <a href="">移动应用</a> | <a href="">热门</a> | <a href="">广告联盟</a> | <a href="">使用条款</a></span>
+					<span>Copyright © 2011-2015 B5M.COM.All rights reserved.Prower by B5Msoft Co.Ltd </span>
+					<span>增值电信业务营业许可证：沪B2-20130065号|中华人民共和国互联网药品信息服务资格证书（沪）-非经营性-2013-0034沪卫（中医）网审【2015】10032号 沪ICP备11034776号-3 | 食品流通许可证：</span>
+					<span>SP3101151410301755</span>
+				</div>
+				<div id="box52"><img src="img/bo1.gif" alt=""><img src="img/bo2.png" alt=""><img src="img/bo3.gif" alt=""><img src="img/bo4.png" alt=""><img src="img/bo5.png" alt=""><img src="img/bo6.png" alt=""><img src="img/bo7.png" alt=""></div>
+			</div>
+			
+				</div>
+			</div>
+	
+</body>
+</html>
+

@@ -508,6 +508,42 @@
 			margin: auto 5px;
 			
 		}
+		#nav{
+			width: 130px;
+			position:absolute;
+			right: -80px;
+			top: 50px;
+			float: right;
+		}
+		#nav img{
+			padding: 0px;
+			margin: 0px;
+			float: left;
+		}
+		#nav1{
+			width: 130px;
+			position:absolute;
+			right: -45px;
+			top: 150px;
+			margin: 10px 0;
+			float: right;
+		}
+		#nav2{
+			width: 130px;
+			position:absolute;
+			right: -77px;
+			top: 300px;
+			margin: 10px 0;
+			float: right;
+		}
+		#nav3{
+			width: 130px;
+			position:absolute;
+			right: -77px;
+			top: 359px;
+			margin: 10px 0;
+			float: right;
+		}
 		
 </style>
 </head>
@@ -860,5 +896,30 @@
 		</div>
 		<div id="box52"><img src="img/bo1.gif" alt=""><img src="img/bo2.png" alt=""><img src="img/bo3.gif" alt=""><img src="img/bo4.png" alt=""><img src="img/bo5.png" alt=""><img src="img/bo6.png" alt=""><img src="img/bo7.png" alt=""></div>
 	</div>
+	<div id="nav"><img src="img/consult-s.png" alt=""><img src="img/xiaobang.png" alt=""></div>
+	<div id="nav1"><img src="img/youhui.png" alt=""></div>
+	<div id="nav2"><img src="img/app.png" alt=""></div>
+	<div id="nav3"><img src="img/cart.png" alt=""></div>
+	<script>
+		var nav=document.getElementById("nav");
+		var m=nav.right;
+		var times=0;
+		console.log(nav.getBoundingClientRect().right);
+		nav.onmouseover=function(){/*times=setInterval(function(){ 
+							   if(m<=0){
+								   m++;
+							   }
+			nav.style.right = m+'px';
+			console.log(m+"this!");
+							  }, 40);*/
+		nav.style.right ='-10px';}
+		nav.onmouseout=function(){
+			clearInterval(times);
+			nav.style.right ='-80px';
+		}
+			
+			
+		
+	</script>
 </body>
 </html>
